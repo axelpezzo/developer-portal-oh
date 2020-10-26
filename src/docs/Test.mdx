@@ -1,0 +1,157 @@
+---
+name: Test
+menu: Config
+route: /config/test
+---
+
+import { Hint } from '../../gatsby-theme-docz-oh/src/gatsby-theme-docz/custom-components/Hint';
+import { InlineCode } from '../../gatsby-theme-docz-oh/src/gatsby-theme-docz/custom-components/InlineCode';
+
+# Header
+
+Improved and redesigned header now allows making the header fixed and adding a logo image.
+
+<Playground>
+  <Hint icon={false}>This is a default hint without an icon.</Hint>
+  <Hint type="warning">This is a warning hint with an icon.</Hint>
+  <Hint type="success">
+    This is a success hint with an icon.
+    <br />
+    in multiple lines.
+  </Hint>
+  <Hint type="info" variant="outer">
+    This is an outer variant info hint with an icon.
+  </Hint>
+  <Hint type="danger" variant="outer">
+    This is an outer variant danger hint with an icon.
+  </Hint>
+</Playground>
+
+
+```jsx
+import { Hint } from '@nejcm/docz-theme-extended';
+
+<Playground>
+  <Hint icon={false}>This is a default hint without an icon.</Hint>
+  <Hint type="warning">This is a warning hint with an icon.</Hint>
+  <Hint type="success">
+    This is a success hint with an icon.
+    <br />
+    in multiple lines.
+  </Hint>
+  <Hint type="info" variant="outer">
+    This is an outer variant info hint with an icon.
+  </Hint>
+  <Hint type="danger" variant="outer">
+    This is an outer variant danger hint with an icon.
+  </Hint>
+</Playground>
+
+```
+
+## Config
+
+### Fixed header
+
+Inside `doczrc.js` file there is a `themeConfig.header.fixed` option:
+
+```js
+//doczrc.js
+export default {
+  themeConfig: {
+    header: {
+      fixed: true,
+    },
+  },
+};
+```
+
+#### Options
+
+| Name  | Type      | Default | Description                                       |
+| ----- | --------- | ------- | ------------------------------------------------- |
+| fixed | `boolean` | false   | Specify if the header should be fixed at the top. |
+
+<hr />
+
+### Logo
+
+Inside `doczrc.js` file there is a `themeConfig.logo` option with a possibility to define logos for light and dark theme.
+
+<Hint type="warning">
+  The image has to be placed inside the <InlineCode>public</InlineCode> folder
+  or the provided option has to be an url address.
+</Hint>
+
+```js
+//doczrc.js
+export default {
+  themeConfig: {
+    logo: {
+      src: '/public/logo.svg',
+      width: 50,
+    },
+  },
+};
+```
+
+Example with an url:
+
+```js
+//doczrc.js
+export default {
+  themeConfig: {
+    logo: {
+      src: 'https://www.my-website.com/logo.svg',
+      width: 50,
+    },
+  },
+};
+```
+
+Example with a light and dark theme logo option:
+
+```js
+//doczrc.js
+export default {
+  themeConfig: {
+    logo: {
+      src: {
+        light: '/public/logo.svg',
+        dark: 'https://www.my-website.com/logo-dark.svg',
+      },
+      width: 50,
+    },
+  },
+};
+```
+
+#### Options
+
+| Name  |           Type           | Default | Description                                 |
+| :---- | :----------------------: | :-----: | :------------------------------------------ |
+| src   | `string` &#124; `object` |    —    | Specify the image source as an path or url. |
+| width | `string` &#124; `number` | `75px`  | Specify the image width.                    |
+
+<hr />
+
+### Icons
+
+Inside `doczrc.js` file there is a `themeConfig.header.icons` option:
+
+```js
+//doczrc.js
+export default {
+  themeConfig: {
+    header: {
+      icons: 'minimal',
+    },
+  },
+};
+```
+
+#### Options
+
+| Name  |              Type              |  Default  | Description                     |
+| :---- | :----------------------------: | :-------: | :------------------------------ |
+| icons | `'minimal'` &#124; `'default'` | `default` | Specify the header icons style. |

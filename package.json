@@ -1,0 +1,27 @@
+{
+  "name": "docz-example-with-custom-docz-theme",
+  "private": true,
+  "version": "2.0.0",
+  "license": "MIT",
+  "scripts": {
+    "install:theme": "xcopy /S /Y \"gatsby-theme-docz-oh\" \"node_modules/gatsby-theme-docz-oh\"",
+    "dev": "docz dev",
+    "build": "docz build",
+    "serve": "docz serve"
+  },
+  "dependencies": {
+    "@babel/core": "7.11.1",
+    "@babel/preset-env": "^7.12.1",
+    "@emotion/core": "10.0.35",
+    "@emotion/styled": "10.0.27",
+    "docz": "latest",
+    "lodash": "4.17.20",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-feather": "2.0.8",
+    "react-headroom": "3.0.0",
+    "react-scrollspy": "^3.4.3",
+    "react-timeago": "4.4.0"
+  }
+}
