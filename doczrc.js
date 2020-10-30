@@ -6,17 +6,19 @@ export default {
   description: 'OH Docs',
   base: '/',
   menu: [
-    'Intro',
-    { name: 'Install', menu: [] },
-    { name: 'Config', menu: [] },
-    'Api',
+    'Home',
+    'OH Core',
+    'OH GUI',
+    'OH Doc',
+    'OH UI',
+    'OH API',
   ],
   menuDisplayName: {
   },
   groups: {
   },
   apis: 'https://www.open-hospital.org/oh-api/swagger-ui/index.html',
-  repository: 'https://github.com/informatici/openhospital-core',
+  repository: 'https://github.com/informatici/openhospital-ui/',
   themeConfig: {
     search: true,
     mainContainer: {
