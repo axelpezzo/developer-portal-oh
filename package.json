@@ -4,7 +4,9 @@
   "version": "2.0.0",
   "license": "MIT",
   "scripts": {
-    "install:theme": "xcopy /S /Y \"gatsby-theme-docz-oh\" \"node_modules/gatsby-theme-docz-oh\"",
+    "install": "npm run install:theme",
+    "install:gatsby": "npm i -g gatsby-cli",
+    "install:theme": "echo d|xcopy /S /Y \"gatsby-theme-docz-oh\" \"node_modules/gatsby-theme-docz-oh\"",
     "dev": "docz dev",
     "build": "docz build",
     "serve": "docz serve"
