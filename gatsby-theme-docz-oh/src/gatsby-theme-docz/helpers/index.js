@@ -9,7 +9,10 @@ export const isUrl = (str) => {
   }
 };
 
-export const getPublicUrl = (base, src) => src;
+export const getPublicUrl = (base, src) => {
+  console.log(src);
+  return src;
+}
   /*activeEnv !== 'development' && !isUrl(src)
     ? `/${(base || '').replace(/^\/|\/$/g, '')}/${src}`
     : src;*/
