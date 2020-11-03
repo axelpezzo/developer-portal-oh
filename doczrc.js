@@ -18,9 +18,10 @@ export default {
   groups: {
   },
   apis: 'https://www.open-hospital.org/oh-api/swagger-ui/index.html',
-  repository: 'https://github.com/informatici/openhospital-ui/',
+  repository: 'https://github.com/informatici/openhospital',
   themeConfig: {
-    search: true,
+    search: false,
+    showDarkModeSwitch: false,
     mainContainer: {
       fullscreen: false,
       align: 'center',
