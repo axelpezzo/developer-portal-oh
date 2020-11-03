@@ -95,6 +95,9 @@ cd docz-with-custom-docz-theme-example
 ## Setup
 
 ```sh
+# If gatsby is not installed globally
+npm run install:gatsby
+
 yarn # npm i
 ```
 
@@ -109,6 +112,8 @@ yarn dev # npm run dev
 ```sh
 yarn build # npm run build
 ```
+
+Exports built contents in `.docz/dist`
 
 ## Serve built app
 
