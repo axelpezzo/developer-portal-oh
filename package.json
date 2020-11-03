@@ -4,6 +4,9 @@
   "version": "2.0.0",
   "license": "MIT",
   "scripts": {
+    "install": "npm run install:theme",
+    "install:gatsby": "npm i -g gatsby-cli",
+    "install:theme": "mv gatsby-theme-docz-oh node_modules/gatsby-theme-docz-oh",
     "dev": "docz dev",
     "build": "docz build",
     "serve": "docz serve"
