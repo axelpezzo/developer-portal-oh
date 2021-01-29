@@ -6,7 +6,7 @@
   "scripts": {
     "install": "npm run install:theme",
     "install:gatsby": "npm i -g gatsby-cli",
-    "install:theme": "mv gatsby-theme-docz-oh node_modules/gatsby-theme-docz-oh",
+    "install:theme": "cpx gatsby-theme-docz-oh/**/* node_modules/gatsby-theme-docz-oh",
     "dev": "docz dev",
     "build": "docz build",
     "serve": "docz serve"
@@ -16,6 +16,7 @@
     "@babel/preset-env": "^7.12.1",
     "@emotion/core": "10.0.35",
     "@emotion/styled": "10.0.27",
+    "cpx": "^1.5.0",
     "docz": "latest",
     "lodash": "4.17.20",
     "prop-types": "^15.7.2",

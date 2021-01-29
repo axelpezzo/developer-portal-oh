@@ -7,9 +7,9 @@ import {
   Menu,
   Search,
   Sun,
-  Code,
-  Terminal
+  Code
 } from 'gatsby-theme-docz/src/components/Icons';
+import { ExternalLink } from "react-feather";
 import {Logo} from 'gatsby-theme-docz/src/components/Logo';
 import PropTypes from 'prop-types';
 import {useState} from 'react';
@@ -21,6 +21,7 @@ import {Container, FixedHeader, InnerContainer} from './custom-styles';
 export const Header = ({onOpen}) => {
   const {
     apis,
+    link,
     repository,
     themeConfig: {
       showDarkModeSwitch,
@@ -72,9 +73,24 @@ export const Header = ({onOpen}) => {
                 href={repository}
                 sx={styles.headerButton}
                 target="_blank"
+                title="Repository"
                 rel="noopener noreferrer"
               >
                 <Github size={15} />
+              </a>
+            </Box>
+          )}
+          {link && (
+            <Box sx={{mr: 2}}>
+              <a
+                className={`${icons} icon`}
+                href={link}
+                sx={styles.headerButton}
+                target="_blank"
+                title="Demo"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink size={15} />
               </a>
             </Box>
           )}

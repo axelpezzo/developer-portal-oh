@@ -4,9 +4,10 @@ export default {
   ignore: ['./*.md'],
   title: 'Documentation',
   description: 'OH Docs',
-  base: '/',
+  base: '/oh20-developer-portal/',
   menu: [
-    'Home',
+    'Intro',
+    'Open Hospital',
     'OH Core',
     'OH GUI',
     'OH Doc',
@@ -16,9 +17,12 @@ export default {
   menuDisplayName: {
   },
   groups: {
+    '': [],
+    Repositories: ['OH Core', 'OH GUI', 'OH Doc', 'OH UI', 'OH API',],
   },
-  apis: 'https://www.open-hospital.org/oh-api/swagger-ui/index.html',
+  apis: 'https://open-hospital.org/oh20-api-portal/',
   repository: 'https://github.com/informatici/openhospital',
+  link: 'https://open-hospital.org/oh20',
   themeConfig: {
     search: false,
     showDarkModeSwitch: false,
