@@ -16,4 +16,8 @@ export const Image = styled.img`
   @media screen and (max-width: 500px) {
     margin-right: 0.75rem;
   }
+
+  @media screen and (max-width: 500px) {
+    width: 125px;
+  }
 `;

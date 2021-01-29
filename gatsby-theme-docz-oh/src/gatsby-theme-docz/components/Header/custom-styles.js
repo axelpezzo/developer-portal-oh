@@ -47,6 +47,11 @@ export const InnerContainer = styled.div`
   @media screen and (max-width: ${breakpoints.tablet}px) {
     padding-left: 4rem;
   }
+
+  @media screen and (max-width: ${breakpoints.mobile}px) {
+    padding-right: 10px;
+  }
+
   @media screen and (max-width: ${breakpoints.mobile}px) {
     button.minimal,
     a.minimal {

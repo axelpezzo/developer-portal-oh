@@ -10,7 +10,5 @@ export const isUrl = (str) => {
 };
 
 export const getPublicUrl = (base, src) => {
-  activeEnv !== 'development' && !isUrl(src)
-    ? `/${(base || '').replace(/^\/|\/$/g, '')}/${src}`
-    : src;
+  return `/${(base || '').replace(/^\/|\/$/g, '')}/${src}`;
 }
