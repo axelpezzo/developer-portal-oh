@@ -13,12 +13,13 @@ export default {
     'OH Doc',
     'OH UI',
     'OH API',
+    {name: 'OH Portable', route: 'https://github.com/informatici/openhospital'}
   ],
   menuDisplayName: {
   },
   groups: {
     '': [],
-    Repositories: ['OH Core', 'OH GUI', 'OH Doc', 'OH UI', 'OH API',],
+    Repositories: ['OH Core', 'OH GUI', 'OH Doc', 'OH UI', 'OH API', 'OH Portable'],
   },
   apis: 'https://open-hospital.org/oh20-api-portal/',
   repository: 'https://github.com/informatici/openhospital',
