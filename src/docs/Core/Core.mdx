@@ -10,26 +10,27 @@ The Core component is used by the [Java Swing desktop GUI][openhospital-gui], an
 
 ## How to build
 
-After having installed Java JDK 8+ and Maven, to build this project issue:  
+Java JDK 8 (or later) and Maven are required for building the project. 
+The following command builds the project. 
 
 ```jsx
 mvn package
 ```
 
-To use the Core component in the other projects, you'll need to install it locally with:
+To use the Core component in the other projects, you'll need to install it locally by:
 
 ```jsx
 mvn install
 ```
 
-To run the tests simply issue:
+To run tests
 
 ```jsx
 mvn test
 ```
 
-Tests are run against an in-memory database (H2).  
-To test the application against MySQL, you can change [`database.properties`][database.prop] and run the Docker container in the root folder with:
+Tests are run against an in-memory database (H2). 
+To test the application on top of a MYSQL installation, you need to change [`database.properties`][database.prop] and run the Docker container in the root folder with:
 
 ```jsx
 docker-compose up
@@ -37,9 +38,8 @@ docker-compose up
 
 ## How to run Open Hospital
 
-To run Open Hospital, you'll need a user interface, which is provided in the [GUI][openhospital-gui] and in the [UI][openhospital-ui] projects.  
-Please follow the instructions in the documentation of those repositories.
-
+It is necessary a user interface to run Open Hospital. Interfaces are provided in the [GUI][openhospital-gui] and in the [UI][openhospital-ui] projects.
+Please follow the instructions onthe documentation pages of those repositories.
 
 ## How to contribute
 
@@ -49,6 +49,7 @@ A list of open issues is available on [Jira][jira].
 ## Code style
 
 This project uses a consistent code style and provides definitions for use in both IntelliJ and Eclipse IDEs.
+
 
 <details><summary>IntelliJ IDEA instructions</summary>
 
@@ -61,9 +62,9 @@ For IntelliJ IDEA the process for importing the code style is:
 * Go to *Scheme* at the top, click on the setting button by the side of the drop-down list
 * Select *Import Scheme*
 * Select *IntelliJ IDE code style XML*
-* Navigate to the location of the file which relative to the project root is:  `.ide-settings/idea/OpenHospital-code-style-configuration.xml`
+* Navigate to the location of the file which relative to the project root is: `.ide-settings/idea/OpenHospital-code-style-configuration.xml`
 * Select *OK* 
-* At this point the code style is stored as part of the IDE and is used for **all** projects opened in the editor.  To restrict the settings to just this project again select the setting button by the side of the *Scheme* list and select *Copy to Project...*. If successful a notice appears in the window that reads: *For current project*.
+* At this point the code style is stored as part of the IDE and is used for **all** projects opened in the editor. To restrict the settings to just this project again select the setting button by the side of the *Scheme* list and select *Copy to Project...*. If successful a notice appears in the window that reads: *For current project*.
 
 </details> 
 
@@ -81,9 +82,9 @@ For Eclipse the process requires loading the formatting style and the import ord
 * At this point the code style is stored and is applicable to all projects opened in the IDE.  To restrict the settings just to this project select *Configure Project Specific Settings...* in the upper right.  In the next dialog select the *openhospital* repository and select *OK*.  In the next dialog select the *Enable project specific settings* checkbox.  Finally select *Apply and Close*.
 * Back in the *Code Style* menu area, select *Organize Imports*
 * Select *Import...*
-* Navigate to the location of the file which relative to the project root is:  `.ide-settings/eclipse/OpenHospital.importorder`
+* Navigate to the location of the file which relative to the project root is: `.ide-settings/eclipse/OpenHospital.importorder`
 * Select *Open*
-* As with the formatting styles the import order is applicable to all projects.  In order to change it just for this project repeat the same steps as above for *Configure Project Specific Settings...*
+* As with the formatting styles the import order is applicable to all projects. In order to change it just for this project repeat the same steps as above for *Configure Project Specific Settings...*
  
 </details> 
 
