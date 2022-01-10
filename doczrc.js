@@ -30,9 +30,9 @@ export default {
       "OH Portable",
     ],
   },
-  apis: "https://open-hospital.org/oh-api/swagger-ui/index.html",
+  apis: "https://oh2.open-hospital.org/oh-api/swagger-ui.html",
   repository: "https://github.com/informatici/openhospital",
-  link: "https://open-hospital.org/oh20",
+  link: "https://oh2.open-hospital.org/oh20",
   themeConfig: {
     search: false,
     showDarkModeSwitch: false,
